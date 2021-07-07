@@ -1,0 +1,224 @@
+.profeed {
+    padding: 0 10px 50px 10px;
+    &__tittle {
+        font-family: TTNorms;
+        font-size: 34px;
+        font-weight: bold;
+        font-stretch: normal;
+        line-height: 1.18;
+        text-align: center;
+        color: #363636;
+        margin-bottom: 10px;
+    }
+    &__description {
+        font-family: TTNorms;
+        font-size: 16px;
+        line-height: 1.63;
+        text-align: center;
+        color: #383838;
+        margin-bottom: 49px;
+    }
+}
+
+.profeed-wrapper-open {
+    &__tittle {
+        font-family: TTNorms;
+        font-size: 20px;
+        font-weight: bold;
+        line-height: 1.5;
+        padding:23px 0 23px 0;
+        max-width: 372px;
+        border-bottom: 1px solid #d7d7d7;
+        position: relative;
+        cursor: pointer;
+        color: #ababab;
+        &::after {
+            content: url(../img/copy_2021-07-07/copy.png);
+            position: absolute;
+            right: 0;
+            vertical-align: center;
+            transform: rotate(180deg);
+        }
+    }
+    &__tittle.is-active {
+        color:black;
+        &::after {
+            transform: rotate(0);
+            border:none;
+            transition: 0.3s;
+        }
+    }
+    &__description {
+        display:none;
+        position: relative;
+        &--text {
+            font-family: TTNorms;
+            font-size: 16px;
+            line-height: 1.63;
+            color: #383838;
+            max-width: 372px;
+            padding: 0 0 11px 0;
+            border-bottom: 1px solid #d7d7d7;
+        }
+    }
+    &__img {
+        width: 350px;
+        position: absolute;
+        top:-80px;
+        right: 50px;
+        box-shadow: 7px 6px 47px 0px rgba(167, 156, 156, 0.486);
+    }
+}
+.is-active {
+    display: flex;
+}
+@media(max-width:850px) {
+    .profeed-wrapper-open {
+        &__description.is-active {
+            flex-direction: column-reverse;
+        }
+        &__img1 {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 23px 0 24px 0;
+        }
+        &__img {
+            position: static;
+            width: 295px;
+            height: 270px;
+        }
+    }
+    .profeed-wrapper {
+        &__content {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+} 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// .profeed-wrapper {
+//     margin-bottom: 200px;
+//     &__description {
+//         text-align: justify;
+//         font-family: Lato;
+//         font-size: 16px;
+//         line-height: 22px;
+//         font-weight: 400;
+//         color: #505050;
+//         margin-bottom: 50px;
+//     }
+//     &__summary {
+//         padding-left: 40px;
+//         font-size: 20px;
+//         font-weight: bold;
+//         line-height: 1.5;
+//         font-family: TTNorms;
+//         color: #262626;
+//         outline:0;
+        
+//         cursor: pointer;
+//         &::-webkit-details-marker { display: none; }
+//         &::-moz-list-bullet { list-style-type: none; }
+//     }
+//      &__details{
+//         margin-bottom: 10px;
+//         position: relative;
+//          &[open] {
+//              display: flex;
+//          }
+//      }
+//     &__details-description {
+//         font-family: TTNorms;
+//         font-size: 16px;
+//         line-height: 1.63;
+//         color: #383838;
+//         font-size: 14px;
+//         line-height: 22px;
+//         font-weight: 400;
+//         text-align: justify;
+//         padding: 5px 5px;
+//         max-width: 300px;
+//         border-bottom: 1px solid #696969;
+//     }
+//     &__img {
+//         max-width: 400px;
+//         height: 400px; 
+//         align-self: flex-start;  
+//         box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+//     }
+//     &__open-content {
+//         display: flex;
+//         justify-content: space-around;
+//     }
+// }
+// @media(max-width:767px) {
+//     .profeed{
+//         &__tittle {
+//             font-size: 28px;
+//             line-height: 1.36;
+//         }
+//     }
+//     .profeed-wrapper {
+//         &__open-content {
+//             display: flex;
+//             flex-direction: column-reverse;
+//             justify-content: center;
+//             text-align: center;
+//         }
+//         &__summary {
+//             text-align: left;
+//             margin-bottom: 23px;
+//             padding-left: 0;
+//         }
+//         &__details-description {
+//             margin-right: auto;
+//             margin-left: auto;
+//             border: none;
+//         }
+//         &__img {
+//             max-width: 295px;
+//             height: 295px;
+//             margin-bottom: 24px; 
+//         }
+//     }
+
+// }

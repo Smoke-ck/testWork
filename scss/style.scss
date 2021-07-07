@@ -1,0 +1,19 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    min-width: 320px;
+}
+.container {
+    max-width: 910px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 5px;
+}
+@import "header";
+@import "exome";
+@import "evoidCompromise";
+@import "wrapper";
+@import "perfomence";
+@import "benefits";
+@import "profeed";

@@ -1,0 +1,25 @@
+.wrapper {
+    &__container {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
+        grid-column-gap: 30px;
+        grid-row-gap: 20px;
+        padding-bottom: 40px;
+    }
+    &__content {
+        text-align: center;
+    }
+    &__tittle {
+        font-size: 20px;
+        font-weight: bold;
+        color:#404c77;
+        margin-bottom: 20px;
+    }
+    &__description {
+        font-family: TTNorms;
+        font-size: 16px;
+        line-height: 1.63;
+        text-align: center;
+        color: #383838;
+    }
+}

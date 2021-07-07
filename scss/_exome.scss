@@ -1,0 +1,54 @@
+.exome {
+    background-image: url(../img/research-hero-desktop_2021-07-03/research-hero-desktop.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    overflow: hidden;
+    padding: 157px 0 159px 0;
+    &__content {
+        max-width: 444px;
+    }
+    &__tittle {
+        font-family: TTNorms;
+        font-size: 44px;
+        font-weight: bold;
+        font-stretch: normal;
+        line-height: 1.14;
+        color: black;
+    }
+    &__description {
+        font-family: TTNorms;
+        font-size: 20px;
+        line-height: 1.5;
+        color: black;
+    }
+}
+@media(max-width:767px) {
+    .exome {
+        padding: 97px 0 206px 0;
+        &__content {
+            margin-left: auto;
+            margin-right: auto;
+        }
+        &__tittle {
+            font-size: 32px;
+            line-height: 1.31;
+        }
+        &__description {
+            font-size: 18px;
+            line-height: 1.44;
+        }
+    }
+}
+@media(max-width:767px) {
+    .exome {
+        &__content {
+            max-width: 300px;
+        }
+
+    }
+}
+@media(max-width:320px) {
+    .exome {
+        background-image:url(../img/research-hero-mobile_2021-07-03/research-hero-mobile.png)
+    }
+}
